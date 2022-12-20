@@ -1,15 +1,15 @@
 import React from "react";
-import {useState} from "react";
-import Todos from "./Todos";
 
-function Todo() {
+function Todo(todos) {
 
+  console.log(todos);
 
-  return(
+  return todos.map((todo) => (
     <div>
-
+      <div>{todo.text}</div>
+      <div>#{todo.tag}</div>
     </div>
-  )
+  ))
 }
 
 export default Todo;
