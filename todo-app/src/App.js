@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
       </ul>
       </nav> 
       <Routes>
-      <Route path="/" element={<FirstPage/>} />
-          <Route />
-          <Route /> 
+        <Route path="/" element={<FirstPage/>} />
+        <Route path="tehtavat" element={<SecondPage/>}/>
+        <Route /> 
         </Routes>
     </BrowserRouter>
   ) 
