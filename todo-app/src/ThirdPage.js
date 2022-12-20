@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function KolmasSivu() { 
+function ThirdPage() { 
     return (
       <div className="ohjeet-tietoa">
       <h2>Ohjeet:</h2>
@@ -41,4 +41,4 @@ function KolmasSivu() {
   )
 }
 
-export default KolmasSivu;
+export default ThirdPage;
