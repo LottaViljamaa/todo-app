@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function Todos(props) {
 
-  const [input, setInput] = useState();
+  const [input, setInput] = useState("");
   const [tagInput, setTagInput] = useState("");
 
   //Take user todo input
@@ -38,6 +38,7 @@ function Todos(props) {
       type="text"
       placeholder="Write a tag for the task"
       value={tagInput}
+      name="tagText"
       onChange = {(e) => setTagInput(e.target.value)}
       ></input>
       <button>Add Todo</button>
