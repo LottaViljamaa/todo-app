@@ -39,6 +39,7 @@ function Todos(props) {
       value={tagInput}
       onChange = {(e) => setTagInput(e.target.value)}
       ></input>
+      <button>Add Todo</button>
     </form>
   )
 }
