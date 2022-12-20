@@ -6,11 +6,12 @@ function Todos(props) {
   const [input, setInput] = useState();
   const [tagInput, setTagInput] = useState("");
 
-  //Takes user input
+  //Take user todo input
   const userInput = e => {
     setInput(e.target.value);
   }
 
+  //Function to take user todo and tag inputs
   const handleSubmit = e => {
     e.preventDefault();
     props.onSubmit({
