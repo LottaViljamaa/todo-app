@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import FirstPage from "./FirstPage";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       </ul>
       </nav> 
       <Routes>
-          <Route  />
+      <Route path="/" element={<FirstPage/>} />
           <Route />
           <Route /> 
         </Routes>
