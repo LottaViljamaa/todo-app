@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
+import ThirdPage from './ThirdPage';
 
 function App() {
   return (
@@ -24,8 +25,8 @@ function App() {
       <Routes>
         <Route path="/" element={<FirstPage/>} />
         <Route path="tehtavat" element={<SecondPage/>}/>
-        <Route /> 
-        </Routes>
+        <Route path="ohjeet-tietoa" element={<ThirdPage/>}/> 
+      </Routes>
     </BrowserRouter>
   ) 
 };
