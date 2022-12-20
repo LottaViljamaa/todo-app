@@ -11,8 +11,19 @@ function Todos(props) {
     setInput(e.target.value);
   }
 
+  const handleSubmit = e => {
+    e.preventDefault();
+    props.onSubmit({
+      id: Math.floor(Date.now()/1000),
+      text: input,
+      tag: tagInput
+    });
+    setInput("");
+    setTagInput("");
+  }
+
   return(
-    <div>
+    <form onSubmit={handleSubmit}>
       <input
       type="text"
       placeholder="Write a new task"
@@ -21,7 +32,14 @@ function Todos(props) {
       onChange={userInput}
       required
       ></input>
-    </div>
+
+      <input
+      type="text"
+      placeholder="Write a tag for the todo"
+      value={tagInput}
+      onChange = {(e) => setTagInput(e.target.value)}
+      ></input>
+    </form>
   )
 }
 
