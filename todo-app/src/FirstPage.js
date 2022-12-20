@@ -1,6 +1,6 @@
 import './App.css';
 
-function EnsimmainenSivu() {
+function FirstPage() {
   return (
     <div className="Tervetuloa">
      <h1>Tervetuloa Todo -sovellukseeni!</h1>
@@ -10,6 +10,6 @@ function EnsimmainenSivu() {
     </div>
   )
 }
-export default EnsimmainenSivu;
+export default FirstPage;
 
 
