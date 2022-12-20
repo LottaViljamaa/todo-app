@@ -8,17 +8,17 @@ import ThirdPage from './ThirdPage';
 function App() {
   return (
     <BrowserRouter>
-    <nav className="navigaatiopalkki">
+    <nav className="navigationBar">
       <ul>
-        <li className="ensimmainenSivu">
-          <Link to="/">Tervetuloa</Link>
+        <li className="firstPage">
+          <Link to="/">Welcome</Link>
         </li>
-        <li className="ToinenSivu">
-          <Link to="tehtavat">Tehtävät</Link>
+        <li className="secondPage">
+          <Link to="todos">Todos</Link>
         </li>
         
-        <li className="KolmasSivu">
-          <Link to="ohjeet-tietoa">Ohjeet/tietoa</Link>
+        <li className="thirdPage">
+          <Link to="manual">Manual</Link>
         </li>
       </ul>
       </nav> 
