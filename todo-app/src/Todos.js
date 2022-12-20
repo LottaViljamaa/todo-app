@@ -36,7 +36,7 @@ function Todos(props) {
 
       <input
       type="text"
-      placeholder="Write a tag for the todo"
+      placeholder="Write a tag for the task"
       value={tagInput}
       onChange = {(e) => setTagInput(e.target.value)}
       ></input>
