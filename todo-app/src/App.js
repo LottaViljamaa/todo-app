@@ -24,8 +24,8 @@ function App() {
       </nav> 
       <Routes>
         <Route path="/" element={<FirstPage/>} />
-        <Route path="tehtavat" element={<SecondPage/>}/>
-        <Route path="ohjeet-tietoa" element={<ThirdPage/>}/> 
+        <Route path="todos" element={<SecondPage/>}/>
+        <Route path="manual" element={<ThirdPage/>}/> 
       </Routes>
     </BrowserRouter>
   ) 
