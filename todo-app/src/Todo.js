@@ -23,7 +23,7 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
   }
 
   return todos.map((todo, index) => (
-    <div>
+    <div className="todoList">
       <div>{todo.text}</div>
       <div>#{todo.tag}</div>
       <button
