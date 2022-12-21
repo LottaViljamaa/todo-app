@@ -18,6 +18,7 @@ function TodoList() {
       setTodos(deletetask);
     }
 
+    //Function to move task up
     const moveUp = (todos, index) => {
       const newLocation = todos.slice();
       if(index > 0) {
@@ -25,6 +26,16 @@ function TodoList() {
         newLocation[index-1] = todos[index];
       }
       setTodos(newLocation);
+    }
+
+    //Function to move task down
+    const moveDown = (todos, index) => {
+      const newLocation = todos.slice();
+      if(index < todos.length - 1 ) {
+        newLocation[index] = todos[index + 1];
+        newLocation[index + 1] = todos[index];
+      }
+      setTodos(newLocation)
     }
 
 
@@ -35,6 +46,7 @@ function TodoList() {
          todos={todos}
          deleteTodo={deleteTodo}
          moveUp = {moveUp}
+         moveDown = {moveDown}
         />
       </div>
     )
