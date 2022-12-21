@@ -1,6 +1,7 @@
 import React from "react";
+import Todos from "./Todos"
 
-function Todo(todos) {
+function Todo({todos, deleteTodo}) {
 
   return todos.map((todo) => (
     <div>
@@ -9,7 +10,10 @@ function Todo(todos) {
       <button>Move up</button>
       <button>&#8593;</button>
       <button>Edit</button>
-      <button>Delete</button>
+      <button
+        onClick={() => deleteTodo(todo.id)}
+        >Delete
+      </button>
       <button>&#8595;</button>
       <button>Move down</button>
     </div>
