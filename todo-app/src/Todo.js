@@ -27,25 +27,35 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
       <div>{todo.text}</div>
       <div>#{todo.tag}</div>
       <button
-      onClick={() => moveToTop(todos, index)}
-      >Move to top</button>
-      <button
-        onClick={() => moveUp(todos, index)}
-        >&#8593;
+        className="moveToTop"
+        onClick={() => moveToTop(todos, index)}>
+          Move to top
       </button>
       <button
-        onClick={() => setEdit({id: todo.id, value: todo.text, tag: todo.tag})}
-      >Edit</button>
-      <button
-        onClick={() => deleteTodo(todo.id)}
-        >Delete
+        className="moveUp"
+        onClick={() => moveUp(todos, index)}>
+          &#8593;
       </button>
       <button
-      onClick={() => moveDown(todos, index)}
-      >&#8595;</button>
+        className="setEdit"
+        onClick={() => setEdit({id: todo.id, value: todo.text, tag: todo.tag})}>
+          Edit
+      </button>
       <button
-        onClick={() => moveToBottom(todos, index)}
-      >Move to bottom</button>
+        className="deleteTodo"
+        onClick={() => deleteTodo(todo.id)}>
+          Delete
+      </button>
+      <button
+        className="moveDown"
+        onClick={() => moveDown(todos, index)}>
+          &#8595;
+      </button>
+      <button
+      className="moveToBottom"
+        onClick={() => moveToBottom(todos, index)}>
+        Move to bottom
+      </button>
     </div>
   ))
 }
