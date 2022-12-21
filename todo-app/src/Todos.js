@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function Todos(props) {
 
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(props.edit ? props.edit.value: "");
   const [tagInput, setTagInput] = useState("");
 
   //Take user todo input
@@ -25,23 +25,48 @@ function Todos(props) {
 
   return(
     <form onSubmit={handleSubmit}>
+      {props.muokkaa ? (
+        <>
+        <input
+          type="text"
+          placeholder="Edit task"
+          value={input}
+          name="text"
+          onChange={userInput}
+          required
+        ></input>
+        
+        <input
+          type="text"
+          placeholder="Edit tag"
+          value={tagInput}
+          name="tagText"
+          onChange = {(e) => setTagInput(e.target.value)}
+          ></input>
+        <button>Update</button>
+      </>):
+      (
+        <>
       <input
-      type="text"
-      placeholder="Write a new task"
-      value={input}
-      name="text"
-      onChange={userInput}
-      required
+        type="text"
+        placeholder="Write a new task"
+        value={input}
+        name="text"
+        onChange={userInput}
+        required
       ></input>
-
+      
       <input
-      type="text"
-      placeholder="Write a tag for the task"
-      value={tagInput}
-      name="tagText"
-      onChange = {(e) => setTagInput(e.target.value)}
+        type="text"
+        placeholder="Write a tag for the task"
+        value={tagInput}
+        name="tagText"
+        onChange = {(e) => setTagInput(e.target.value)}
       ></input>
       <button>Add Todo</button>
+      </>
+      )
+    }
     </form>
   )
 }
