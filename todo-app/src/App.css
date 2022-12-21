@@ -98,3 +98,13 @@ body {
   background-color: rgb(78, 78, 78);
   color: white;
 }
+
+
+/*Style for all task's buttons*/ 
+.todoList button {
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 40px;
+  color: rgb(228, 228, 228);
+  background-color: rgb(78, 78, 78);
+}
