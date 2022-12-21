@@ -18,6 +18,11 @@ function TodoList() {
       setTodos(deletetask);
     }
 
+    //Function to edit task
+    const editTodo = (todoID, newTodo) => {
+      setTodos(previous => previous.map(item => (item.id ===todoID ? newTodo:item)))
+    }
+
     //Function to move task to the top
     const moveToTop = (todos, index) => {
       const newLocation = todos.slice();
@@ -65,6 +70,7 @@ function TodoList() {
         <Todo
          todos={todos}
          deleteTodo={deleteTodo}
+         editTodo={editTodo}
          moveToTop={moveToTop}
          moveUp = {moveUp}
          moveDown = {moveDown}
