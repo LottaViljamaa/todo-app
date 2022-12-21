@@ -48,6 +48,16 @@ function TodoList() {
       setTodos(newLocation)
     }
 
+    //Function to move taskt to the bottom
+    const moveToBottom = (todos, index) => {
+      const newLocation = todos.slice();
+      if(index < todos.length - 1 ) {
+        newLocation[index] = todos[todos.length - 1];
+        newLocation[todos.length - 1] = todos[index];
+      }
+      setTodos(newLocation);
+    }
+
 
     return (
       <div>
@@ -58,6 +68,7 @@ function TodoList() {
          moveToTop={moveToTop}
          moveUp = {moveUp}
          moveDown = {moveDown}
+         moveToBottom={moveToBottom}
         />
       </div>
     )
