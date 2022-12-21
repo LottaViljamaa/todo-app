@@ -1,7 +1,7 @@
 import React from "react";
 import Todos from "./Todos"
 
-function Todo({todos, deleteTodo, moveUp}) {
+function Todo({todos, deleteTodo, moveUp, moveDown}) {
 
   return todos.map((todo, index) => (
     <div>
@@ -17,7 +17,9 @@ function Todo({todos, deleteTodo, moveUp}) {
         onClick={() => deleteTodo(todo.id)}
         >Delete
       </button>
-      <button>&#8595;</button>
+      <button
+      onClick={() => moveDown(todos, index)}
+      >&#8595;</button>
       <button>Move down</button>
     </div>
   ))
