@@ -18,6 +18,15 @@ function TodoList() {
       setTodos(deletetask);
     }
 
+    const moveUp = (todos, index) => {
+      const newLocation = todos.slice();
+      if(index > 0) {
+        newLocation[index] = todos[index-1];
+        newLocation[index-1] = todos[index];
+      }
+      setTodos(newLocation);
+    }
+
 
     return (
       <div>
@@ -25,6 +34,7 @@ function TodoList() {
         <Todo
          todos={todos}
          deleteTodo={deleteTodo}
+         moveUp = {moveUp}
         />
       </div>
     )
