@@ -35,3 +35,20 @@ li a {
 body {
   background-color: rgb(82, 82, 82);
 }
+
+/*Style for the welcome -page*/
+.Welcome {
+  text-align: center;
+  color: rgb(228, 228, 228);
+  font-size: 20px;
+  list-style-type: none;
+  border-style: groove;
+  border-radius: 10px;
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background-color: grey;
+  color: black;
+}
