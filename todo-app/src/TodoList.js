@@ -12,12 +12,19 @@ function TodoList() {
       setTodos(newTodo);
     }
 
+    //Delete todo
+    const deleteTodo = id => {
+      const deletetask = [...todos].filter(todo => todo.id !== todo)
+      setTodos(deletetask);
+    }
+
 
     return (
       <div>
         <Todos onSubmit={addTodo}/>
         <Todo
          todos={todos}
+         deleteTodo={deleteTodo}
         />
       </div>
     )
