@@ -3,9 +3,9 @@ import React from "react";
 
 function ThirdPage() { 
     return (
-      <div className="ohjeet-tietoa">
-      <h2>Manual:</h2>
-      <ul className="ohjeet">
+      <div className="manual-header">
+      <h1>Manual:</h1>
+      <ul className="manual">
         <h3>How to add task?</h3>
         <li>
           
@@ -27,9 +27,9 @@ function ThirdPage() {
           
         </li>
         
-      <h1>Author: Lotta Viljamaa</h1>
+      <h2>Author: Lotta Viljamaa</h2>
       <p>This application is developed as part of my studies and React course.</p>
-      <h2>20.12.2021, Tampereen ammattikorkeakoulu</h2>
+      <h3>20.12.2021, Tampereen ammattikorkeakoulu</h3>
       </ul>
     </div>
   )
