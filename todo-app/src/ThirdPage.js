@@ -4,7 +4,7 @@ import React from "react";
 function ThirdPage() { 
     return (
       <div className="ohjeet-tietoa">
-      <h2>Ohjeet:</h2>
+      <h2>Manual:</h2>
       <ul className="ohjeet">
         <h3>How to add task?</h3>
         <li>
