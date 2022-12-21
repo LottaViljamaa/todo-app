@@ -1,38 +1,37 @@
-.App {
+/*Style for the navigation bar*/
+.navigationBar {
+  padding-bottom: 100px;
+   list-style-type: none;
+}
+/*Style for the navigation bar*/
+.firstPage, .secondPage, .thirdPage{
+  display: inline;
+  font-size: 20px;
+  width: 30%;
+  margin-left: 1%;
+  float: left;
   text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+}
+/*Style for the links in navigation bar*/
+li a {
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Style for links in navigation bar, when hovering*/ 
+.firstPage:hover, .secondPage:hover, .thirdPage:hover {
+  transform: scale(0.9);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Style for links in navigation bar, when clicking*/ 
+.firstPage:active, .secondPage:active, .thirdPage:active {
+  background-color: rgb(114, 114, 114);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Background color for the page*/
+body {
+  background-color: rgb(82, 82, 82);
 }
