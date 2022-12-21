@@ -4,7 +4,7 @@ import TodoList from './TodoList';
 
 function SecondPage() {
   return (
-    <div className="Muistilista">
+    <div className="todoList">
       <TodoList/>
     </div>
   )
