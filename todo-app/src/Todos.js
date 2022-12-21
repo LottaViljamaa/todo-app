@@ -25,7 +25,7 @@ function Todos(props) {
 
   return(
     <form onSubmit={handleSubmit}>
-      {props.muokkaa ? (
+      {props.edit ? (
         <>
         <input
           type="text"
