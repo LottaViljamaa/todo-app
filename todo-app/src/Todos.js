@@ -27,6 +27,7 @@ function Todos(props) {
     <form onSubmit={handleSubmit}>
       {props.edit ? (
         <>
+        <h1>Edit the task</h1>
         <input
           type="text"
           placeholder="Edit task"
@@ -63,7 +64,8 @@ function Todos(props) {
         name="tagText"
         onChange = {(e) => setTagInput(e.target.value)}
       ></input>
-      <button>Add Todo</button>
+      <button>Add Todos</button>
+      <h1>Todos:</h1>
       </>
       )
     }
