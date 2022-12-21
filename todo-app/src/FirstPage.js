@@ -2,11 +2,11 @@ import './App.css';
 
 function FirstPage() {
   return (
-    <div className="Tervetuloa">
-     <h1>Tervetuloa Todo -sovellukseeni!</h1>
-     <p>"Tehtävät" -välilehdelle voit listata uusia tulevia tehtäviä ja tapahtumia. </p>
-     <p>"Ohjeet/tietoa" -välilehdeltä löydät ohjeet sovelluksen käyttämiseen, sekä tietoa tekijästä.</p>
-     <p>Toivotan sinulle oikein mukavia hetkiä sovellukseni parissa!</p>
+    <div className="Welcome">
+     <h1>Welcome to Todo -application!</h1>
+     <p>You can add new tasks in "Todos" -tab.</p>
+     <p>You can find the manual in "Manual" -tab</p>
+     <p>I wish you very pleasant moments with my application! </p>
     </div>
   )
 }
