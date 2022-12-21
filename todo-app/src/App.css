@@ -42,7 +42,6 @@ body {
   color: rgb(228, 228, 228);
   font-size: 20px;
   list-style-type: none;
-  border-style: groove;
   border-radius: 10px;
   max-width: 75%;
   margin-right: auto;
@@ -51,8 +50,38 @@ body {
   padding-bottom: 30px;
   background-color: grey;
   color: black;
+  box-shadow: 0px 0px 10px 2px rgb(77, 181, 199);
 }
 
+/*Style for header on manual -page*/
 .manual-header {
   text-align: center;
+}
+
+/*Style for the todos*/
+.todoList {
+  background-color: grey;
+  width: 75%;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px 2px rgb(77, 181, 199);
+}
+
+/*Style for the task and tag input fields*/
+.todoInput, .tagInput {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  height: 50px;
+  font-size: 20px;
+  width: 33%
 }
