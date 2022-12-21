@@ -29,6 +29,7 @@ function Todos(props) {
         <>
         <h1>Edit the task</h1>
         <input
+          className="todoInput"
           type="text"
           placeholder="Edit task"
           value={input}
@@ -38,6 +39,7 @@ function Todos(props) {
         ></input>
         
         <input
+          className="tagInput"
           type="text"
           placeholder="Edit tag"
           value={tagInput}
@@ -49,6 +51,7 @@ function Todos(props) {
       (
         <>
       <input
+        className="todoInput"
         type="text"
         placeholder="Write a new task"
         value={input}
@@ -58,6 +61,7 @@ function Todos(props) {
       ></input>
       
       <input
+        className="tagInput"
         type="text"
         placeholder="Write a tag for the task"
         value={tagInput}
