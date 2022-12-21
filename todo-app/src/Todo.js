@@ -1,7 +1,26 @@
 import React from "react";
+import {useState} from "react";
 import Todos from "./Todos"
 
-function Todo({todos, deleteTodo, moveToTop, moveUp, moveDown, moveToBottom}) {
+function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToBottom}) {
+
+  const [edit, setEdit] = useState({
+    id:null,
+    value: "",
+    tag: ""
+  });
+
+  const acceptEdit = (value) => {
+    editTodo(edit.id, value)
+    setEdit({
+      id:null,
+      value:""
+    })
+  }
+
+  if(edit.id) {
+    return <Todos edit={edit} onSubmit= {acceptEdit} />
+  }
 
   return todos.map((todo, index) => (
     <div>
@@ -14,7 +33,9 @@ function Todo({todos, deleteTodo, moveToTop, moveUp, moveDown, moveToBottom}) {
         onClick={() => moveUp(todos, index)}
         >&#8593;
       </button>
-      <button>Edit</button>
+      <button
+        onClick={() => setEdit({id: todo.id, value: todo.text, tag: todo.tag})}
+      >Edit</button>
       <button
         onClick={() => deleteTodo(todo.id)}
         >Delete
