@@ -14,7 +14,7 @@ function TodoList() {
 
     //Delete todo
     const deleteTodo = id => {
-      const deletetask = [...todos].filter(todo => todo.id !== todo)
+      const deletetask = [...todos].filter(todo => todo.id !== id)
       setTodos(deletetask);
     }
 
