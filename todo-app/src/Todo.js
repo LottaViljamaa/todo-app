@@ -26,6 +26,7 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
     <div className="todoList">
       <div>{todo.text}</div>
       <div>#{todo.tag}</div>
+      <div className="todoButtons">
       <button
         className="moveToTop"
         onClick={() => moveToTop(todos, index)}>
@@ -56,6 +57,7 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
         onClick={() => moveToBottom(todos, index)}>
         Move to bottom
       </button>
+      </div>
     </div>
   ))
 }
