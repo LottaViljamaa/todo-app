@@ -127,6 +127,12 @@ body {
   margin-top: 10px;
 }
 
+/*Style for move up and downn  -button*/
 .moveUp, .moveDown {
   width: 40px;
+}
+
+/*Style for edit and delete -buttons*/
+.setEdit, .deleteTodo {
+  width: 100px;
 }
