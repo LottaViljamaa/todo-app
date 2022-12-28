@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import FirstPage from "./FirstPage";
 import SecondPage from "./SecondPage";
-import ThirdPage from './ThirdPage';
+import ManualPage from './ManualPage';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Link to="todos">Todos</Link>
         </li>
         
-        <li className="thirdPage">
+        <li className="ManualPage">
           <Link to="manual">Manual</Link>
         </li>
       </ul>
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<FirstPage/>} />
         <Route path="todos" element={<SecondPage/>}/>
-        <Route path="manual" element={<ThirdPage/>}/> 
+        <Route path="manual" element={<ManualPage/>}/> 
       </Routes>
     </BrowserRouter>
   ) 
