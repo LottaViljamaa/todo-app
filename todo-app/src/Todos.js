@@ -68,8 +68,8 @@ function Todos(props) {
         name="tagText"
         onChange = {(e) => setTagInput(e.target.value)}
       ></input>
-      <button className="addButton">Add Todos</button>
-      <h1>Todos:</h1>
+      <button className="addButton">Add Todo</button>
+      <h1 className="todosHeader">Todos:</h1>
       </>
       )
     }
