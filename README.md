@@ -7,7 +7,7 @@ You can add new todos, edit and delete todos on the Todos -tab.
 The entire user manual can be found on the Manual -tab
 
 ### Installation
-- git clone
+- git clone https://github.com/LottaViljamaa/todo-app.git
 - cd todo-app
 - npm install
 - cd src
