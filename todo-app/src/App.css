@@ -58,6 +58,10 @@ body {
   text-align: center;
 }
 
+.todosHeader {
+  font-size: 40px;
+}
+
 /*Style for the todos*/
 .todoList {
   background-color: grey;
