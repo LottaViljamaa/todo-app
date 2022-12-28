@@ -13,5 +13,5 @@ The entire user manual can be found on the Manual -tab
 - cd src
 - npm start
 
-### Pictures of the application
+### Picture of the application
 ![todos](https://user-images.githubusercontent.com/77788924/209857670-9d742a1b-137f-456f-a073-c067c11dbcef.png)
