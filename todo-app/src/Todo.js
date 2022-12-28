@@ -24,8 +24,10 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
 
   return todos.map((todo, index) => (
     <div className="todoList">
+      <div className="todoInfo">
       <div>{todo.text}</div>
       <div>#{todo.tag}</div>
+      </div>
       <div className="todoButtons">
       <button
         className="moveToTop"
