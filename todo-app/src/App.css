@@ -4,7 +4,7 @@
    list-style-type: none;
 }
 /*Style for the navigation bar*/
-.firstPage, .secondPage, .ManualPage{
+.firstPage, .TodosPage, .ManualPage{
   display: inline;
   font-size: 20px;
   width: 30%;
@@ -22,12 +22,12 @@ li a {
 }
 
 /*Style for links in navigation bar, when hovering*/ 
-.firstPage:hover, .secondPage:hover, .ManualPage:hover {
+.firstPage:hover, .TodosPage:hover, .ManualPage:hover {
   transform: scale(0.9);
 }
 
 /*Style for links in navigation bar, when clicking*/ 
-.firstPage:active, .secondPage:active, .ManualPage:active {
+.firstPage:active, .TodosPage:active, .ManualPage:active {
   background-color: rgb(114, 114, 114);
 }
 
