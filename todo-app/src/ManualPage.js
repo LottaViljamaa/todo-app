@@ -33,7 +33,6 @@ function ThirdPage() {
         
       <h2>Author: Lotta Viljamaa</h2>
       <p>This application is developed as part of my studies and React course.</p>
-      <h3>20.12.2021, Tampereen ammattikorkeakoulu</h3>
       </ul>
     </div>
   )
