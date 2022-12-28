@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import FirstPage from "./FirstPage";
-import SecondPage from "./SecondPage";
+import TodosPage from "./TodosPage";
 import ManualPage from './ManualPage';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <li className="firstPage">
           <Link to="/">Welcome</Link>
         </li>
-        <li className="secondPage">
+        <li className="TodosPage">
           <Link to="todos">Todos</Link>
         </li>
         
@@ -24,7 +24,7 @@ function App() {
       </nav> 
       <Routes>
         <Route path="/" element={<FirstPage/>} />
-        <Route path="todos" element={<SecondPage/>}/>
+        <Route path="todos" element={<TodosPage/>}/>
         <Route path="manual" element={<ManualPage/>}/> 
       </Routes>
     </BrowserRouter>
