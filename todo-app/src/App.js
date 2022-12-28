@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
-import FirstPage from "./FirstPage";
+import WelcomePage from "./WelcomePage";
 import TodosPage from "./TodosPage";
 import ManualPage from './ManualPage';
 
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
     <nav className="navigationBar">
       <ul>
-        <li className="firstPage">
+        <li className="WelcomePage">
           <Link to="/">Welcome</Link>
         </li>
         <li className="TodosPage">
@@ -23,7 +23,7 @@ function App() {
       </ul>
       </nav> 
       <Routes>
-        <Route path="/" element={<FirstPage/>} />
+        <Route path="/" element={<WelcomePage/>} />
         <Route path="todos" element={<TodosPage/>}/>
         <Route path="manual" element={<ManualPage/>}/> 
       </Routes>
