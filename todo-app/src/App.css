@@ -117,10 +117,16 @@ body {
 .moveToTop {
   float: left;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 /*Style for move to the bottom button*/
 .moveToBottom{
   float: right;
   margin-right: 20px;
+  margin-top: 10px;
+}
+
+.moveUp, .moveDown {
+  width: 40px;
 }
