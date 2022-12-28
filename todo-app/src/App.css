@@ -86,16 +86,6 @@ body {
   width: 33%
 }
 
-
-/*Style for all task's buttons*/ 
-.moveToTop, .moveUp, .setEdit, .deleteTodo, .moveDown, .moveToBottom {
-  margin-left: 20px;
-  border-radius: 10px;
-  height: 40px;
-  color: rgb(228, 228, 228);
-  background-color: rgb(78, 78, 78);
-}
-
 /*Style for add and edit -buttons*/
 .addButton, .updateButton {
   height: 50px;
@@ -109,7 +99,28 @@ body {
   color: white;
 }
 
+/*Style for all task's buttons*/ 
+.moveToTop, .moveUp, .setEdit, .deleteTodo, .moveDown, .moveToBottom {
+  margin-left: 5px;
+  border-radius: 10px;
+  height: 40px;
+  color: rgb(228, 228, 228);
+  background-color: rgb(78, 78, 78);
+}
+
 /*Style for the delete -button*/
 .deleteTodo {
   background-color: #df3b3b;
+}
+
+/*Style for move to the top button*/
+.moveToTop {
+  float: left;
+  margin-left: 20px;
+}
+
+/*Style for move to the bottom button*/
+.moveToBottom{
+  float: right;
+  margin-right: 20px;
 }
