@@ -1,12 +1,14 @@
 import './App.css';
+import t from './translations/en';
+import translations from './translations/en';
 
 function FirstPage() {
   return (
     <div className="Welcome">
-     <h1>Welcome to Todo -application!</h1>
-     <p>You can add new tasks in "Todos" -tab.</p>
-     <p>You can find the manual in "Manual" -tab</p>
-     <p>I wish you very pleasant moments with my application! </p>
+     <h1>{t.welcome.header}</h1>
+     <p>{t.welcome.todos}</p>
+     <p>{t.welcome.manual}</p>
+     <p>{t.welcome.note}</p>
     </div>
   )
 }

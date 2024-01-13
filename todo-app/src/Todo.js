@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
 import Todos from "./Todos"
+import t from "./translations/en";
 
 function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToBottom}) {
 
@@ -32,7 +33,7 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
       <button
         className="moveToTop"
         onClick={() => moveToTop(todos, index)}>
-          Move to top
+          {t.todos.todo.moveTop}
       </button>
       <button
         className="moveUp"
@@ -42,12 +43,12 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
       <button
         className="setEdit"
         onClick={() => setEdit({id: todo.id, value: todo.text, tag: todo.tag})}>
-          Edit
+          {t.todos.todo.edit}
       </button>
       <button
         className="deleteTodo"
         onClick={() => deleteTodo(todo.id)}>
-          Delete
+          {t.todos.todo.delete}
       </button>
       <button
         className="moveDown"
@@ -57,7 +58,7 @@ function Todo({todos, deleteTodo, editTodo, moveToTop, moveUp, moveDown, moveToB
       <button
       className="moveToBottom"
         onClick={() => moveToBottom(todos, index)}>
-        Move to bottom
+        {t.todos.todo.moveBottom}
       </button>
       </div>
     </div>

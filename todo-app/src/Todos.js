@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from "react";
+import t from "./translations/en";
 
 function Todos(props) {
 
@@ -27,11 +28,11 @@ function Todos(props) {
     <form onSubmit={handleSubmit}>
       {props.edit ? (
         <>
-        <h1>Edit the task</h1>
+        <h1>{t.todos.editTodo.header}</h1>
         <input
           className="todoInput"
           type="text"
-          placeholder="Edit task"
+          placeholder={t.todos.editTodo.editTask}
           value={input}
           name="text"
           onChange={userInput}
@@ -41,19 +42,19 @@ function Todos(props) {
         <input
           className="tagInput"
           type="text"
-          placeholder="Edit tag"
+          placeholder={t.todos.editTodo.editTag}
           value={tagInput}
           name="tagText"
           onChange = {(e) => setTagInput(e.target.value)}
           ></input>
-        <button className="updateButton">Update</button>
+        <button className="updateButton">{t.todos.editTodo.update}</button>
       </>):
       (
         <>
       <input
         className="todoInput"
         type="text"
-        placeholder="Write a new task"
+        placeholder={t.todos.addTask}
         value={input}
         name="text"
         onChange={userInput}
@@ -63,13 +64,13 @@ function Todos(props) {
       <input
         className="tagInput"
         type="text"
-        placeholder="Write a tag for the task"
+        placeholder={t.todos.addTag}
         value={tagInput}
         name="tagText"
         onChange = {(e) => setTagInput(e.target.value)}
       ></input>
-      <button className="addButton">Add Todo</button>
-      <h1 className="todosHeader">Todos:</h1>
+      <button className="addButton">{t.todos.addTodo}</button>
+      <h1 className="todosHeader">{t.todos.header}</h1>
       </>
       )
     }
