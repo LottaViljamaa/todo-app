@@ -2,6 +2,9 @@
 ### Introduction
 The Application is a school project and it's developed as a part of my REACT course. This application is Todo-application where you can add new todos with a tag, edit and delete todos. 
 
+### Test the application
+You can test the application: https://todo-app-b33a4.web.app/
+
 ### How to use?
 You can add new todos, edit and delete todos on the Todos -tab. 
 The entire user manual can be found on the Manual -tab
