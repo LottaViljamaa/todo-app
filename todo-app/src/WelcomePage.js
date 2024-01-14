@@ -1,6 +1,5 @@
 import './App.css';
 import t from './translations/en';
-import translations from './translations/en';
 
 function FirstPage() {
   return (
